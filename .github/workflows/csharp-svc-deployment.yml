@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
 
 env:
-  APP_NAME: red-movie-catalog-svc
-  PACT_PACTICIPANT: Dii_MovieCatalogSvc
+  APP_NAME: Dii_MovieCatalogSvc
+  PACT_PACTICIPANT: red-movie-catalog-svc
   VERIFY_PROVIDER_PACT: 'false'
 
 jobs:
