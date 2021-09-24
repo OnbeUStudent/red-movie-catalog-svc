@@ -33,7 +33,7 @@ namespace dii_MovieCatalogSvc.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/Movies/5
+        // GET: api/Movies/guidstring
         [HttpGet("{id}")]
         public async Task<ActionResult<Movie>> GetMovie(string id)
         {
@@ -53,7 +53,7 @@ namespace dii_MovieCatalogSvc.Controllers
             return movie;
         }
 
-        // PUT: api/Movies/5
+        // PUT: api/Movies/guidstring
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         [ProducesResponseType(204)]
